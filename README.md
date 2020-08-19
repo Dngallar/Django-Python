@@ -9,4 +9,6 @@ Django Web Framework (Python)
 
 * Simple HTML code test
 
-**Note:** to run in **localhost** use `python manage.py runserver`
+**Notes:**
+- To run in **localhost** use `python manage.py runserver`
+- To validate HTML code use [Nu Html Checker](https://validator.w3.org/nu)
