@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 """
-    Simplest Browser in Python
+    Simplest Browser
 
     Domingo Gallardo Saavedra
     August, 18 2020
