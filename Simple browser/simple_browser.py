@@ -11,9 +11,9 @@ import socket
 
 # End point to send and receive data to the computer
 mysock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-mysock.connect(('data.pr4e.org' , 80)) # Call
+mysock.connect(('iowlabs.com' , 80)) # Call
 # Data in the Internet is generally sent in UTF-8. In Pytho is Unicode
-cmd = 'GET http://data.pr4e.org/page1.htm HTTP/1.0\r\n\r\n'.encode()
+cmd = 'GET http://iowlabs.com/index.html HTTP/1.0\r\n\r\n'.encode()
 mysock.send(cmd)
 
 while True:
