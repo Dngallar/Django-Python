@@ -13,6 +13,12 @@ Django Web Framework (Python)
 
 - Simple CSS code test.
 - SQL tests.
+- Extension of **models.py** module:  
+  `from django.db import models`  
+
+  `class User(models.Model):`  
+      `name  = models.CharField(max_length=128)`  
+      `email = models.CharField(max_length=128)`
 
 **Notes:**
 - To run in **localhost** use `python manage.py runserver`
@@ -30,4 +36,4 @@ Django Web Framework (Python)
 > To extend the models: `python3 manage.py makemigrations`<br/>
 > To remove database: `rm db.sqlite3`<br/>
 > To create database and table(s): `python3 manage.py migrate`<br/>
-> To start the Django shell: `python3 manage.py shell`
+> To start the Django shell: `python3 manage.py shell`  
