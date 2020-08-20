@@ -33,6 +33,8 @@ Django Web Framework (Python)
 > To create database and table(s): `python3 manage.py migrate`<br/>
 > To start the Django shell: `python3 manage.py shell`  
 
+***
+
 **Notes:**
 - To validate HTML code use
   [Nu Html Checker](https://validator.w3.org/nu)
