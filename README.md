@@ -19,3 +19,12 @@ Django Web Framework (Python)
   [Nu Html Checker](https://validator.w3.org/nu)
 - To validate CSS code use
   [CSS Validation Service](https://jigsaw.w3.org/css-validator/)
+
+### Useful commands used in Django
+
+## Make sure things are set up
+`python3 manage.py check`          
+`python3 manage.py makemigrations`  
+`rm db.sqlite3`  >To remove database
+`python3 manage.py migrate` >Create database and table(s)
+`python3 manage.py shell` >Start the django shell
