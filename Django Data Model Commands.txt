@@ -1,0 +1,29 @@
+python3 manage.py check           # Make sure things are set up
+python3 manage.py makemigrations  # Probably won't find any changes
+rm db.sqlite3                     # In case you have done this before
+python3 manage.py migrate         # Create the database and table(s)
+
+Start the django shell:
+python3 manage.py shell
+(In the shell at the prompt)
+
+from users.models import User
+
+u = User(name='IoW Labs', email='contacto@iowlabs.com')
+u.save()
+u = User(name='Test', email='test@iowlabs.com')
+u.save()
+
+User.objects.values()
+User.objects.filter(email='contacto@iowlabs.com').values()
+
+User.objects.filter(email='test@iowlabs.com').delete()
+User.objects.values()
+
+User.objects.filter(email='test@iowlabs.com').update(name='Test Update')
+User.objects.values()
+
+User.objects.values().order_by('email')
+User.objects.values().order_by('-name')
+
+quit()
