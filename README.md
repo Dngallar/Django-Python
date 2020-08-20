@@ -16,12 +16,13 @@ Django Web Framework (Python)
 - Extension of **models.py** module.
 
   Example:  
-
+  <pre><code>
   `from django.db import models`  
 
   `class User(models.Model):`  
-  <pre><code>`name  = models.CharField(max_length=128)`</pre></code>  
-  <pre><code>`email = models.CharField(max_length=128)`</pre></code>
+      `name  = models.CharField(max_length=128)`
+      `email = models.CharField(max_length=128)`
+  </pre></code>
 
 ***
 
