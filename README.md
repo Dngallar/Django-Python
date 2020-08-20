@@ -22,7 +22,7 @@ Django Web Framework (Python)
 
 ***
 
-## Make sure things are set up
+## To set up
 > To check: `python3 manage.py check`          
 > To make migrations: `python3 manage.py makemigrations`  
 > To remove database: `rm db.sqlite3`  
