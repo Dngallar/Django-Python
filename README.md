@@ -20,8 +20,8 @@ Django Web Framework (Python)
   `from django.db import models`  
 
   `class User(models.Model):`  
-  `    name  = models.CharField(max_length=128)`  
-  `    email = models.CharField(max_length=128)`
+  <pre><code>`name  = models.CharField(max_length=128)`</pre></code>  
+  <pre><code>`email = models.CharField(max_length=128)`</pre></code>
 
 ***
 
