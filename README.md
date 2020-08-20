@@ -20,8 +20,7 @@ Django Web Framework (Python)
 - To validate CSS code use
   [CSS Validation Service](https://jigsaw.w3.org/css-validator/)
 
-### Useful commands used in Django
-
+======================================
 ## Make sure things are set up
 `python3 manage.py check`          
 `python3 manage.py makemigrations`  
