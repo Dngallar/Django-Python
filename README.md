@@ -26,5 +26,5 @@ Django Web Framework (Python)
 > To check: `python3 manage.py check`          
 > To make migrations: `python3 manage.py makemigrations`  
 > To remove database: `rm db.sqlite3`  
-> To Create database and table(s): `python3 manage.py migrate`
+> To create database and table(s): `python3 manage.py migrate`
 > Start the django shell: `python3 manage.py shell`
