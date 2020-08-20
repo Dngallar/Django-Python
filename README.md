@@ -13,27 +13,30 @@ Django Web Framework (Python)
 
 - Simple CSS code test.
 - SQL tests.
-- Extension of **models.py** module:  
+- Extension of **models.py** module.
+
+  Example:  
+
   `from django.db import models`  
 
   `class User(models.Model):`  
-      `name  = models.CharField(max_length=128)`  
-      `email = models.CharField(max_length=128)`
+  `    name  = models.CharField(max_length=128)`  
+  `    email = models.CharField(max_length=128)`
+
+***
+
+## To set up
+> To run: `python manage.py runserver`
+> To check: `python3 manage.py check`<br/>
+> To extend the models: `python3 manage.py makemigrations`<br/>
+> To remove database: `rm db.sqlite3`<br/>
+> To create database and table(s): `python3 manage.py migrate`<br/>
+> To start the Django shell: `python3 manage.py shell`  
 
 **Notes:**
-- To run in **localhost** use `python manage.py runserver`
 - To validate HTML code use
   [Nu Html Checker](https://validator.w3.org/nu)
 - To validate CSS code use
   [CSS Validation Service](https://jigsaw.w3.org/css-validator/)
 - About Model–View–Controller
   ([MVC](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller))
-
-***
-
-## To set up
-> To check: `python3 manage.py check`<br/>
-> To extend the models: `python3 manage.py makemigrations`<br/>
-> To remove database: `rm db.sqlite3`<br/>
-> To create database and table(s): `python3 manage.py migrate`<br/>
-> To start the Django shell: `python3 manage.py shell`  
