@@ -27,7 +27,7 @@ Django Web Framework (Python)
 
 ## To set up
 > To check: `python3 manage.py check`<br/>
-> To make migrations: `python3 manage.py makemigrations`<br/>
+> To extend the models: `python3 manage.py makemigrations`<br/>
 > To remove database: `rm db.sqlite3`<br/>
 > To create database and table(s): `python3 manage.py migrate`<br/>
 > To start the Django shell: `python3 manage.py shell`
