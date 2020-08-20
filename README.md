@@ -26,11 +26,11 @@ Django Web Framework (Python)
 ***
 
 ## Configuration
-> To run: `python manage.py runserver`
-> To check: `python3 manage.py check`<br/>
-> To extend the models: `python3 manage.py makemigrations`<br/>
-> To remove database: `rm db.sqlite3`<br/>
-> To create database and table(s): `python3 manage.py migrate`<br/>
+> To run: `python manage.py runserver`  
+> To check: `python3 manage.py check`  
+> To extend the models: `python3 manage.py makemigrations`  
+> To remove database: `rm db.sqlite3`  
+> To create database and table(s): `python3 manage.py migrate`  
 > To start the Django shell: `python3 manage.py shell`  
 
 ***
