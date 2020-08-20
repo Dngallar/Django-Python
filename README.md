@@ -11,4 +11,7 @@ Django Web Framework (Python)
 
 **Notes:**
 - To run in **localhost** use `python manage.py runserver`
-- To validate HTML code use [Nu Html Checker](https://validator.w3.org/nu)
+- To validate HTML code use
+  [Nu Html Checker](https://validator.w3.org/nu)
+- To validate CSS code use
+  [CSS Validation Service](https://jigsaw.w3.org/css-validator/)
