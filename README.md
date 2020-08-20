@@ -23,11 +23,8 @@ Django Web Framework (Python)
 ***
 
 ## Make sure things are set up
-`python3 manage.py check`          
-`python3 manage.py makemigrations`  
-> To remove database
-`rm db.sqlite3`  
-> To Create database and table(s)
-`python3 manage.py migrate`
-> Start the django shell
-`python3 manage.py shell`
+> To check: `python3 manage.py check`          
+> To make migrations: `python3 manage.py makemigrations`  
+> To remove database: `rm db.sqlite3`  
+> To Create database and table(s): `python3 manage.py migrate`
+> Start the django shell: `python3 manage.py shell`
