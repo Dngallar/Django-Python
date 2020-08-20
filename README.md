@@ -7,7 +7,11 @@ Django Web Framework (Python)
 
 - Implementation of **SiteTest_1** based on [Django Tutorial 01](https://docs.djangoproject.com/en/3.0/intro/tutorial01/) using ngrok to tunnel the server.
 
-- Simple HTML code test
+- Simple HTML code test.
+
+### August, 20 2020
+
+- Simple CSS code test.
 
 **Notes:**
 - To run in **localhost** use `python manage.py runserver`
