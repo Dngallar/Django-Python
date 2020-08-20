@@ -12,6 +12,7 @@ Django Web Framework (Python)
 ## August, 20 2020
 
 - Simple CSS code test.
+- SQL tests.
 
 **Notes:**
 - To run in **localhost** use `python manage.py runserver`
