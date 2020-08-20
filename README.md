@@ -25,7 +25,7 @@ Django Web Framework (Python)
 
 ***
 
-## To set up
+## Configuration
 > To run: `python manage.py runserver`
 > To check: `python3 manage.py check`<br/>
 > To extend the models: `python3 manage.py makemigrations`<br/>
