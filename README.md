@@ -22,9 +22,10 @@ Django Web Framework (Python)
       email = models.CharField(max_length=128)
                        ...</code></pre>
 
-  **Usage**
+  **Usage:**
 
-  Start the Django shell: `python3 manage.py shell`  
+  Start the Django shell with  
+  `python3 manage.py shell`  
   <pre><code>
   >>> from usermodel.models import Users  
   >>> u = User(name='Domingo', email='dngallar@iowlabs.com')  
