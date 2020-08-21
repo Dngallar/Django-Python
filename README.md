@@ -3,7 +3,8 @@ Django Web Framework in Python
 
 ## August, 19 2020
 
-- Implementation of **SiteTest_1** based on [Django Tutorial 01](https://docs.djangoproject.com/en/3.0/intro/tutorial01/) using ngrok to tunnel the server.
+- Implementation of **SiteTest_1** based on
+  [Django Tutorial 01](https://docs.djangoproject.com/en/3.0/intro/tutorial01/).
 
 - Simple HTML code test.
 
@@ -31,6 +32,8 @@ Django Web Framework in Python
   >>> print(u.id) # SQL key
   </code></pre>
 
+- Implementation of **SiteTest_2** based on
+  [Django Tutorial 02](https://docs.djangoproject.com/en/3.0/intro/tutorial02/).
 ***
 
 ## Configuration
@@ -44,6 +47,9 @@ Django Web Framework in Python
 ***
 
 **Notes:**
+- For online testing (outside **localhost**), **ngrok** is used to tunnel
+  to the server.  
+  `ngrok http 8000`
 - To validate HTML code use
   [Nu Html Checker](https://validator.w3.org/nu)
 - To validate CSS code use
