@@ -75,8 +75,7 @@ In shell
 - To control HTML `request.GET` use  
   `from django.utils.html import escape`  
   `... escape(request.GET['entry'] ...`  
-  Where the url is: `https://domain.com/app?
-  <strong>entry=%3Cb%3EExample%3C%2Fb%3E</strong>`
+  Where the url is: `https://domain.com/app?entry=%3Cb%3EExample%3C%2Fb%3E`
 - To validate HTML code use
   [Nu Html Checker](https://validator.w3.org/nu)
 - To validate CSS code use
