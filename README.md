@@ -21,7 +21,7 @@ Django Web Framework (Python)
   class User(models.Model):
       name  = models.CharField(max_length=128)
       email = models.CharField(max_length=128)
-      ...</code></pre>
+                       ...</code></pre>
 
 ***
 
