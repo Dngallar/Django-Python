@@ -52,9 +52,8 @@ In shell
 - To create a app: `python manage.py startapp app`
 - Modify `app/views.py`
 - Create `app/urls.py`
-- Modify `mysite/urls.py` with `django.urls.include` and insert into
-  *urlpatterns*:  
-  `path('app/', include('app.urls'))`
+- Modify `mysite/urls.py` with `django.urls.include` and  
+  insert into *urlpatterns*: `path('app/', include('app.urls'))`
 
 ## Model changes
 
