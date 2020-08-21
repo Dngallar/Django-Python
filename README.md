@@ -48,13 +48,13 @@ In shell
 > To start the Django shell: `python3 manage.py shell`  
 
 ### Typical structure
-Example:
 
-- Create a app: `python manage.py startapp polls`
-- Modify `polls/views.py`
-- Create `polls/urls.py`
+- To create a app: `python manage.py startapp app`
+- Modify `app/views.py`
+- Create `app/urls.py`
 - Modify `mysite/urls.py` with `django.urls.include` and insert into
-  *urlpatterns*: `path('polls/', include('polls.urls'))`
+  *urlpatterns*:  
+  `path('app/', include('app.urls'))`
 
 ## Model changes
 
