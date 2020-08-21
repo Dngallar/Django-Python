@@ -34,6 +34,9 @@ Django Web Framework in Python
 
 - Implementation of **SiteTest_2** based on
   [Django Tutorial 02](https://docs.djangoproject.com/en/3.0/intro/tutorial02/).
+
+- **Important:** Modify in `mysite/settings.py`  
+  `ALLOWED_HOSTS = []` to `ALLOWED_HOSTS = [ '*' ]`
 ***
 
 ## Creating a project
@@ -54,6 +57,8 @@ In shell
 - Create `app/urls.py`
 - Modify `mysite/urls.py` with `django.urls.include` and  
   insert into *urlpatterns*: `path('app/', include('app.urls'))`
+- Make the app modifiable in the admin.  
+  Modify `app/admin.py`
 
 ## Model changes
 
