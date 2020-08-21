@@ -25,10 +25,10 @@ Django Web Framework (Python)
   **Uso**
 
   Start the Django shell: `python3 manage.py shell`
-  >>> from usermodel.models import Users
-  >>> u = User(name='Domingo', email='dngallar@iowlabs.com')
-  >>> u.save()
-  >>> print(u.id) # SQL key
+  \>\>\> from usermodel.models import Users
+  \>\>\> u = User(name='Domingo', email='dngallar@iowlabs.com')
+  \>\>\> u.save()
+  \>\>\> print(u.id) # SQL key
 
 ***
 
