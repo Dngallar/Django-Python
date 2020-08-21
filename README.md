@@ -17,11 +17,11 @@ Django Web Framework (Python)
 
   Example:  
   <pre><code>
-  `from django.db import models`  
+  from django.db import models
 
-  `class User(models.Model):`  
-      `name  = models.CharField(max_length=128)`
-      `email = models.CharField(max_length=128)`
+  class User(models.Model):  
+      name  = models.CharField(max_length=128)
+      email = models.CharField(max_length=128)
   </pre></code>
 
 ***
