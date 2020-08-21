@@ -36,13 +36,31 @@ Django Web Framework in Python
   [Django Tutorial 02](https://docs.djangoproject.com/en/3.0/intro/tutorial02/).
 ***
 
-## Configuration
+## Creating a project
+In shell
+> To create a empty project: `django-admin startproject mysite`  
 > To run: `python manage.py runserver`  
+> To change the port: `python manage.py runserver 8080`  
 > To check: `python3 manage.py check`  
 > To extend the models: `python3 manage.py makemigrations`  
 > To remove database: `rm db.sqlite3`  
 > To create database and table(s): `python3 manage.py migrate`  
 > To start the Django shell: `python3 manage.py shell`  
+
+### Typical structure
+Example:
+
+- Create a app: `python manage.py startapp polls`
+- Modify `polls/views.py`
+- Create `polls/urls.py`
+- Modify `mysite/urls.py` with `django.urls.include` and insert into
+  *urlpatterns*: `path('polls/', include('polls.urls'))`
+
+## Model changes
+
+- Change models in `mysite/models.py`
+- Run `python manage.py makemigrations` to create migrations for those changes
+- Run `python manage.py migrate` to apply those changes to the database
 
 ***
 
