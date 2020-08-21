@@ -1,7 +1,5 @@
-# Django Python
+# Log of Tests wiht Django Python
 Django Web Framework (Python)
-
-# Log of Tests
 
 ## August, 19 2020
 
