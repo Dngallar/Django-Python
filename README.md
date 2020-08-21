@@ -15,13 +15,11 @@ Django Web Framework (Python)
 - SQL tests.
 - Extension of **models.py** module.
 
-  Example:
-  <pre><code>
+  Example:<pre><code>
   from django.db import models
   class User(models.Model):  
       name  = models.CharField(max_length=128)
-      email = models.CharField(max_length=128)
-  </pre></code>
+      email = models.CharField(max_length=128)</pre></code>
 
 ***
 
