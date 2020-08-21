@@ -15,7 +15,7 @@ Django Web Framework (Python)
 - SQL tests.
 - Extension of **models.py** module.
 
-  Example:  
+  Example:
   <pre><code>
   from django.db import models
 
