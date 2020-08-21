@@ -22,14 +22,14 @@ Django Web Framework (Python)
       email = models.CharField(max_length=128)
                        ...</code></pre>
 
-  **Uso**
+  **Usage**
 
   Start the Django shell: `python3 manage.py shell`  
   <pre><code>
-  \>\>\> from usermodel.models import Users  
-  \>\>\> u = User(name='Domingo', email='dngallar@iowlabs.com')  
-  \>\>\> u.save()  
-  \>\>\> print(u.id) # SQL key
+  >>> from usermodel.models import Users  
+  >>> u = User(name='Domingo', email='dngallar@iowlabs.com')  
+  >>> u.save()  
+  >>> print(u.id) # SQL key
   </code></pre>
 
 ***
