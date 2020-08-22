@@ -87,5 +87,5 @@ In shell
   [CSS Validation Service](https://jigsaw.w3.org/css-validator/)
 - About Model–View–Controller
   ([MVC](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller))
-- [Built-in template tags and filters]
-  (https://docs.djangoproject.com/en/3.1/ref/templates/builtins/)
+- [Built-in template tags and filters](https://docs.djangoproject.com/en/3.1/
+  ref/templates/builtins/)
