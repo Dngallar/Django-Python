@@ -37,6 +37,11 @@ Django Web Framework in Python
 
 - **Important:** Modify in `mysite/settings.py`  
   `ALLOWED_HOSTS = []` to `ALLOWED_HOSTS = [ '*' ]`
+
+## August, 22 2020
+
+- Use of Template Language (DTL).
+
 ***
 
 ## Creating a project
