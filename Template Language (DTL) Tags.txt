@@ -1,0 +1,12 @@
+
+substitution  {{ zap }}
+              {{ zap|safe }}
+
+Calling code  {% url 'car-detail' cat.id %}
+              {% author.get_absolute_url %}
+
+Logic         {% if zap > 100 %}
+              {% endif %}
+
+Blocks        {% block content %}
+              {% endblock %}
