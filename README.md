@@ -40,8 +40,9 @@ Django Web Framework in Python
 
 ## August, 22 2020
 
+- Implementation of **SiteTest_2** based on
+  [Django Tutorial 03](https://docs.djangoproject.com/en/3.0/intro/tutorial03/).
 - Use of Template Language (DTL).
-
 ***
 
 ## Creating a project
