@@ -1,5 +1,5 @@
 
-substitution  {{ zap }}
+Substitution  {{ zap }}
               {{ zap|safe }}
 
 Calling code  {% url 'car-detail' cat.id %}
