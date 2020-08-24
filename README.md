@@ -50,6 +50,7 @@ Django Web Framework in Python
 [Django Tutorial 04](https://docs.djangoproject.com/en/3.0/intro/tutorial04/).
 - Use of `{% csrf_token %}` template tag to protect against
   Cross Site Request Forgeries.
+- Use of `reverse()` to avoid hardcoded url path.
 
 ***
 
