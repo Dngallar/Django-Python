@@ -48,7 +48,8 @@ Django Web Framework in Python
 
 - Implementation of **SiteTest_4** based on
 [Django Tutorial 04](https://docs.djangoproject.com/en/3.0/intro/tutorial04/).
--
+- Use of `{% csrf_token %}` template tag to protect against
+  Cross Site Request Forgeries.
 
 ***
 
