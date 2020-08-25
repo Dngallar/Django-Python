@@ -99,4 +99,6 @@ In shell
 - About Model–View–Controller
   ([MVC](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller))
 - Built-in template tags and filters
-  ([DTL](https://docs.djangoproject.com/en/3.1/ref/templates/builtins/))
+  ([DTL](https://docs.djangoproject.com/en/3.1/ref/templates/builtins/))  
+- Use class `LoginRequiredMixin` to extend a class-based view to indicate that
+  the view can only be accessed by logged-in users.
