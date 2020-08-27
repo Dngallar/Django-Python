@@ -3,7 +3,7 @@ Django Web Framework in Python
 
 ## August, 19 2020
 
-- Implementation of **SiteTest_1** based on
+- Implementation of **Site_Test_1** based on
   [Django Tutorial 01](https://docs.djangoproject.com/en/3.0/intro/tutorial01/).
 
 - Simple HTML code test.
@@ -32,7 +32,7 @@ Django Web Framework in Python
   >>> print(u.id) # SQL key
   </code></pre>
 
-- Extension of **SiteTest_1** based on
+- Extension of **Site_Test_1** based on
   [Django Tutorial 02](https://docs.djangoproject.com/en/3.0/intro/tutorial02/).
 
 - **Important:** Modify in `mysite/settings.py`  
@@ -40,18 +40,18 @@ Django Web Framework in Python
 
 ## August, 22 2020
 
-- Extension of **SiteTest_1** based on
+- Extension of **Site_Test_1** based on
   [Django Tutorial 03](https://docs.djangoproject.com/en/3.0/intro/tutorial03/).
 - Use of Template Language (DTL).
 
 ## August, 24 2020
 
-- Extension of **SiteTest_1** based on
+- Extension of **Site_Test_1** based on
 [Django Tutorial 04](https://docs.djangoproject.com/en/3.0/intro/tutorial04/).
 - Use of `{% csrf_token %}` template tag to protect against
   Cross Site Request Forgeries.
 - Use of `reverse()` to avoid hardcoded url path.
-- Extension of **SiteTest_1** using **cookies**.
+- Extension of **Site_Test_1** using **cookies**.
 
 ***
 
