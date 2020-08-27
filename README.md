@@ -32,7 +32,7 @@ Django Web Framework in Python
   >>> print(u.id) # SQL key
   </code></pre>
 
-- Implementation of **SiteTest_2** based on
+- Extension of **SiteTest_1** based on
   [Django Tutorial 02](https://docs.djangoproject.com/en/3.0/intro/tutorial02/).
 
 - **Important:** Modify in `mysite/settings.py`  
@@ -40,18 +40,18 @@ Django Web Framework in Python
 
 ## August, 22 2020
 
-- Implementation of **SiteTest_3** based on
+- Extension of **SiteTest_1** based on
   [Django Tutorial 03](https://docs.djangoproject.com/en/3.0/intro/tutorial03/).
 - Use of Template Language (DTL).
 
 ## August, 24 2020
 
-- Implementation of **SiteTest_4** based on
+- Extension of **SiteTest_1** based on
 [Django Tutorial 04](https://docs.djangoproject.com/en/3.0/intro/tutorial04/).
 - Use of `{% csrf_token %}` template tag to protect against
   Cross Site Request Forgeries.
 - Use of `reverse()` to avoid hardcoded url path.
-- Extension of **SiteTest_4** using **cookies**.
+- Extension of **SiteTest_1** using **cookies**.
 
 ***
 
