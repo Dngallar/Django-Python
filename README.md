@@ -53,6 +53,10 @@ Django Web Framework in Python
 - Use of `reverse()` to avoid hardcoded url path.
 - Extension of **Site_Test_1** using **cookies**.
 
+### Day 5
+
+- Implementation of **CRUD_Test_1**.
+
 ***
 
 ## Creating a project
