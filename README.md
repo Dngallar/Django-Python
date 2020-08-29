@@ -8,7 +8,7 @@ Django Web Framework in Python
 
 - Simple HTML code test.
 
-## August, 20 2020
+### Day 1
 
 - Simple CSS code test.
 - SQL tests.
@@ -38,13 +38,13 @@ Django Web Framework in Python
 - **Important:** Modify in `mysite/settings.py`  
   `ALLOWED_HOSTS = []` to `ALLOWED_HOSTS = [ '*' ]`
 
-## August, 22 2020
+### Day 2
 
 - Extension of **Site_Test_1** based on
   [Django Tutorial 03](https://docs.djangoproject.com/en/3.0/intro/tutorial03/).
 - Use of Template Language (DTL).
 
-## August, 24 2020
+### Day 3
 
 - Extension of **Site_Test_1** based on
 [Django Tutorial 04](https://docs.djangoproject.com/en/3.0/intro/tutorial04/).
