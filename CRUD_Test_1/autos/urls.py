@@ -1,12 +1,16 @@
 from django.urls import path
-
 from . import views
+from django.views.generic import TemplateView
 
-app_name = 'autos'
+# https://docs.djangoproject.com/en/3.0/topics/http/urls/
+app_name='autos'
 urlpatterns = [
-    path('', views.IndexView.as_view(), name='index'),
-    path('<int:pk>/', views.DetailView.as_view(), name='detail'),
-    path('<int:pk>/results/', views.ResultsView.as_view(), name='results'),
-    path('<int:question_id>/vote/', views.vote, name='vote'),
-    path('owner', views.owner, name='owner'),
+    path('', views.MainView.as_view(), name='all'),
+    path('main/create/', views.AutoCreate.as_view(), name='auto_create'),
+    path('main/<int:pk>/update/', views.AutoUpdate.as_view(), name='auto_update'),
+    path('main/<int:pk>/delete/', views.AutoDelete.as_view(), name='auto_delete'),
+    path('lookup/', views.MakeView.as_view(), name='make_list'),
+    path('lookup/create/', views.MakeCreate.as_view(), name='make_create'),
+    path('lookup/<int:pk>/update/', views.MakeUpdate.as_view(), name='make_update'),
+    path('lookup/<int:pk>/delete/', views.MakeDelete.as_view(), name='make_delete'),
 ]
