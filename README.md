@@ -60,6 +60,7 @@ Django Web Framework in Python
 ***
 
 ## Creating a project
+
 In shell
 > To create a empty project: `django-admin startproject mysite`  
 > To run: `python manage.py runserver`  
@@ -69,6 +70,7 @@ In shell
 > To remove database: `rm db.sqlite3`  
 > To create database and table(s): `python3 manage.py migrate`  
 > To start the Django shell: `python3 manage.py shell`  
+> To create a superuser: `python manage.py createsuperuser`
 
 ### Typical structure
 
