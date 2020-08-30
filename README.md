@@ -57,6 +57,10 @@ Django Web Framework in Python
 
 - Implementation of **CRUD_Test_1**.
 
+### Day 6
+
+- Extension of **CRUD_Test_1**.
+
 ***
 
 ## Creating a project
