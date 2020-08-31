@@ -55,11 +55,11 @@ Django Web Framework in Python
 
 ### Day 5
 
-- Implementation of **CRUD_Test_1**.
+- Implementation of **CRUD_Test_1** using user views and data.
 
 ### Day 6
 
-- Extension of **CRUD_Test_1** using user views and data.
+- Extension of **CRUD_Test_1** adding scripts.
 
 ***
 
