@@ -59,7 +59,7 @@ Django Web Framework in Python
 
 ### Day 6
 
-- Extension of **CRUD_Test_1**.
+- Extension of **CRUD_Test_1** using user views and data.
 
 ***
 
