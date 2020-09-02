@@ -61,6 +61,10 @@ Django Web Framework in Python
 
 - Extension of **CRUD_Test_1** adding scripts.
 
+### Day 7
+
+- Extension of **CRUD_Test_1** adding pictures.
+
 ***
 
 ## Creating a project
