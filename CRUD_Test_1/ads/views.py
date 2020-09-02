@@ -1,18 +1,61 @@
-from ads.models import Ad, Comment
+from ads.models import Ad, Comment, Fav
 from ads.owner import OwnerListView, OwnerDetailView, OwnerCreateView, OwnerUpdateView, OwnerDeleteView
 from django.views import View
 from django.shortcuts import render, redirect, get_object_or_404
 from django.urls import reverse_lazy, reverse
 from django.http import HttpResponse
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.humanize.templatetags.humanize import naturaltime
 
 from django.core.files.uploadedfile import InMemoryUploadedFile
 from ads.forms import CreateForm, CommentForm
+from django.db import connection
+
+from django.db.models import Q
+
+# https://stackoverflow.com/questions/1074212/how-can-i-see-the-raw-sql-queries-django-is-running
+def dump_queries() :
+    qs = connection.queries
+    for q in qs:
+        print(q)
 
 class AdListView(OwnerListView):
     model = Ad
-    # By convention:
-    # template_name = "myarts/article_list.html"
+    template_name = "ads/ad_list.html"
+
+    def get(self, request) :
+        strval =  request.GET.get("search", False)
+
+        favorites = list()
+        if request.user.is_authenticated:
+            # rows = [{'id': 2}, {'id': 4} ... ]  (A list of rows)
+            rows = request.user.favorite_ads.values('id')
+            # favorites = [2, 4, ...] using list comprehension
+            favorites = [ row['id'] for row in rows ]
+
+        if strval :
+            # Simple title-only search
+            objects = Ad.objects.filter(title__contains=strval).select_related().order_by('-updated_at')[:10]
+
+            # Multi-field search
+            #query = Q(title__contains=strval)
+            #query.add(Q(text__contains=strval), Q.OR)
+            #objects = Ad.objects.filter(query).select_related().order_by('-updated_at')[:10]
+        else :
+            # try both versions with > 4 posts and watch the queries that happen
+            #objects = Ad.objects.all().order_by('-updated_at')[:10]
+            objects = Ad.objects.select_related().all().order_by('-updated_at')#[:10]
+
+        # Augment the post_list
+        for obj in objects:
+            obj.natural_updated = naturaltime(obj.updated_at)
+
+        ctx = {'ad_list' : objects, 'search': strval, 'favorites': favorites}
+        retval = render(request, self.template_name, ctx)
+
+        dump_queries()
+        return retval;
+
 
 class AdDetailView(OwnerDetailView):
     model = Ad
@@ -29,6 +72,7 @@ class AdCreateView(LoginRequiredMixin, View):
     fields = ['title', 'text', 'price', 'picture']
     template_name = 'ads/ad_form.html'
     success_url = reverse_lazy('ads:all')
+
     def get(self, request, pk=None) :
         form = CreateForm()
         ctx = { 'form': form }
@@ -52,6 +96,7 @@ class AdUpdateView(LoginRequiredMixin, View):
     fields = ['title', 'text', 'price', 'picture']
     template_name = 'ads/ad_form.html'
     success_url = reverse_lazy('ads:all')
+
     def get(self, request, pk) :
         ad = get_object_or_404(Ad, id=pk, owner=self.request.user)
         form = CreateForm(instance=ad)
@@ -97,3 +142,34 @@ class CommentDeleteView(OwnerDeleteView):
     def get_success_url(self):
         ad = self.object.ad
         return reverse('ads:ad_detail', args=[ad.id])
+
+
+# csrf exemption in class based views
+# https://stackoverflow.com/questions/16458166/how-to-disable-djangos-csrf-validation
+from django.views.decorators.csrf import csrf_exempt
+from django.utils.decorators import method_decorator
+from django.db.utils import IntegrityError
+
+@method_decorator(csrf_exempt, name='dispatch')
+class AddFavoriteView(LoginRequiredMixin, View):
+    def post(self, request, pk) :
+        print("Add PK",pk)
+        t = get_object_or_404(Ad, id=pk)
+        fav = Fav(user=request.user, ad=t)
+        try:
+            fav.save()  # In case of duplicate key
+        except IntegrityError as e:
+            pass
+        return HttpResponse()
+
+@method_decorator(csrf_exempt, name='dispatch')
+class DeleteFavoriteView(LoginRequiredMixin, View):
+    def post(self, request, pk) :
+        print("Delete PK",pk)
+        t = get_object_or_404(Ad, id=pk)
+        try:
+            fav = Fav.objects.get(user=request.user, ad=t).delete()
+        except Fav.DoesNotExist as e:
+            pass
+
+        return HttpResponse()
