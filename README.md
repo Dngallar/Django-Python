@@ -63,7 +63,11 @@ Django Web Framework in Python
 
 ### Day 7
 
-- Extension of **CRUD_Test_1** adding pictures.
+- Extension of **CRUD_Test_1** adding pictures and comments.
+
+### Day 8
+
+- Extension of **CRUD_Test_1** adding searching.
 
 ***
 
