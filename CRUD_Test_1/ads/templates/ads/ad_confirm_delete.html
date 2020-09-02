@@ -2,10 +2,12 @@
 {% block content %}
 <h1>Delete Ad</h1>
 
-<p>Are you sure you want to delete the ad: {{ ad }}?</p>
+<p>Are you sure you want to delete the ad: {{ ad.text }}?</p>
 
 <form action="" method="POST">
   {% csrf_token %}
   <input type="submit" value="Yes, delete.">
+  <a href="{% url 'ads:ad_detail' ad.id %}" class="btn btn-secondary">Cancel</a>
 </form>
+
 {% endblock %}
